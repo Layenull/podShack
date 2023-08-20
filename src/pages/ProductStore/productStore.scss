@@ -1,0 +1,170 @@
+@import '../../config/style/variables.scss';
+.productStore{
+    &__main{
+        margin: 70px 0vw;
+        padding-bottom: 5vh;
+        font-family: 'pod-rg';
+
+        &__top{
+            margin: 0 0vw 30px;
+            
+            // width: 100%;
+            &__btn{
+                position: absolute;
+                width: fit-content;
+                right: 5vw;
+                margin-top: 20px;
+                // padding: 5px 10px;
+                border-radius: 10px;
+                background-color: $primary_colour;
+                color: white;
+                font-size: 16px;
+                box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.1);
+            }
+           &__cover{
+            width: 100%;
+            height: 250px;
+            background-color: lightgray;
+            position: relative;
+            cursor: pointer;
+            #Background{
+                background-repeat: no-repeat;
+                background-size:cover ;
+                background-position: center;
+            }
+
+             background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: center;
+                p{
+                    text-align: center;
+                    margin: auto 0;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    font-size: 24px;
+                    top: 30%;
+                    display: none;
+                    
+                    // justify-content: center;
+                    // align-items: center;
+
+                }
+        
+            input[type="file"] {
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+                width: fit-content;
+            }
+
+            .StoreLogo{
+                background-color: lightgray;
+                border-radius: 50%;
+                height: 70px;
+                width: 70px;
+                position: absolute;
+                bottom: -30px;
+                left: 25px;
+                border: 2px solid white;
+                cursor: pointer;
+                .logoImg{
+                    width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                }
+            }
+            
+            .StoreLogo:hover{
+               p{
+                display: block;
+               }
+            }
+            
+           }
+
+           &__cover:hover{
+                p{
+                    display: block;
+                }
+           }
+           p{
+            margin: 0!important;
+           }
+           .Text{
+            padding-top: 40px;
+            margin-left: 5vw;
+            color: rgb(102, 102, 102);
+            text-align: center;
+            width: fit-content;
+            
+            h2{
+                font-size: 22px;
+                margin-bottom: 0;
+                
+            }
+            .Location{
+                font-size: 14px;
+                // padding-top: 5px;
+                font-weight: 500;
+            }
+           }
+            //padding-bottom: 20px;
+        }
+        &__search{
+            margin: auto;
+            // width: fit-content;
+            max-width: 800px;
+            padding: 0 5vw;
+            .Search{
+                width: 100%;
+                padding: 7px 10px 7px 15px;
+                // position: fixed;
+                // background-color: #fff;
+               
+    
+            }
+        }
+        &__body{
+            margin: 40px 5vw;
+            // display: flex;
+            // flex-wrap: wrap;
+            // justify-content: space-evenly;
+            // gap: 10px;
+            .product-grid{
+                display: flex;
+                .small-screen-product{
+                    @media screen and (min-width:1000px) {
+                        max-width: 250px;
+                    }
+                }
+            }
+            .row{
+                margin-left: auto;
+                margin-right: auto;
+            }
+           
+        }
+        @media screen and (min-width:768px){
+            h2{
+             font-size: 28px!important;
+            }
+            .Location{
+             font-size: 20px !important;
+            }
+            .StoreLogo{
+                width: 100px;
+                height: 100px;
+                bottom: -50px;
+                left: 5vw;
+            }
+            .Text{
+                padding-top: 70px;
+                width: fit-content;
+                
+
+            }
+         }
+    }
+
+}

@@ -1,0 +1,29 @@
+@import '../../config/style/variables.scss';
+
+.Notifications{
+    font-family: 'pod-rg';
+    &__Main{
+        margin: 12vh 5vw;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0,  0.1);
+        padding: 30px ;
+        
+        h2{
+            color: #4f4c4c;
+            border-bottom: 1px solid lightgray;
+        font-size: 28px;
+        padding: 0 10px 10px;
+        }
+        &__body{
+            padding: 30px 0;
+            padding: 10px;
+        }
+    }
+    @media screen and (min-width:1000px) {
+        &__Main{
+            margin: 140px auto;
+            max-width: 800px;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.FootBar{
+    position: fixed;
+    height: 60px;
+    bottom: 20px;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    
+
+     
+    .Operations{
+        width: 100%;
+        padding: 0 5vw;
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 !important;
+            margin: 0 !important;
+            li{
+                list-style: none;
+                display: inline-block; 
+                /* padding: 5px;  */
+                img{
+                    width: 28px;
+                    /* margin: 0 15px; */
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    // @media screen and (min-width:1000px){
+    //     display: none !important;
+    // }
+    @media screen and (max-width:340px){
+        display: none !important;
+    }
+    @media screen and (min-width:600px){
+        display: none !important;
+    }
+
+}
+
+
+// .hide{
+//     display: none;
+// } 
+// .show{
+//     display: flex;
+// }
+
+// .FootBar ul 
+
+// .FootBar ul li 
+ .pageActive{
+    img{
+        //filter: brightness(0) saturate(100%) invert(28%) sepia(59%) saturate(2242%) hue-rotate(245deg) brightness(85%) contrast(88%);
+        filter: brightness(0) saturate(100%) invert(73%) sepia(14%) saturate(2027%) hue-rotate(90deg) brightness(94%) contrast(87%);
+
+
+// filter: invert(28%) sepia(59%) saturate(2242%) hue-rotate(245deg) brightness(85%) contrast(88%);
+    }
+}

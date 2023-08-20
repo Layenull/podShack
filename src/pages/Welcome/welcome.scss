@@ -1,0 +1,67 @@
+@import url('../../config/style/variables.scss');
+
+.Welcome{
+    font-family: 'pod-rg';
+    &__top{
+        img{
+            width: 170px;
+            display: block;
+            margin: auto;
+            position: fixed;
+            left: 0;
+            right: 0;
+        }
+        padding: 5vh 0;
+    }
+    &__slider{
+        margin: 0;
+        padding: 0;
+    }
+    .Btn-container{
+        position: fixed;
+        width: 100%;
+        top: 70vh;
+        // bottom: 0;
+        // margin: auto;
+    }
+    &__Btn{
+        width: 80vw;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        //position: relative;
+        // top: 620px;
+        margin: auto;
+        background: #009FB7;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 5px 0 7px;
+        border-radius: 10px;
+        margin-top: 20px;
+        //position: fixed;
+        left: 0;
+        right: 0;
+    }
+    .register{
+        background-color: #c9edf2;
+        color: #009FB7;
+        //margin-bottom: 20px;
+        // top: 550px;
+    }
+    @media screen and (max-width:333px) {
+      &__top{
+        img{
+            width: 150px;
+        }
+      } 
+      .Btn-container{
+        top:60vh;
+      } 
+      &__Btn{
+        width: 70vw;
+        height: 25px;
+      }
+    }
+}

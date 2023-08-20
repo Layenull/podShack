@@ -1,0 +1,79 @@
+.notificationItem {
+    width: 100%;
+    padding-bottom: 13px;
+
+    &__upper {
+        background-color: #fff;
+        // border-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-left-radius: 15px;
+        // border-bottom-left-radius: 15px;
+        border: 1px solid lightgrey;
+        padding: 12px 15px;
+
+        &__top {
+            // display: flex;
+            // justify-content: space-between;
+            // align-items: center;
+            // padding-bottom: 15px;
+            .dot::after {
+                content: '\2807';
+                font-size: 20px;
+                color: rgb(117, 117, 117);
+            }
+
+            .top-main {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                img {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                }
+            }
+            &__text {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                p{
+                    margin: 0;
+                    padding: 0;
+                }
+                p:nth-child(1){
+                    font-size: 16px;
+                    padding-bottom: 10px;
+                    color: rgb(45, 45, 45);
+                    font-weight: 600;
+                }
+                p:nth-child(2){
+                    font-size: 13px;
+                   color: #817d7d;
+                //    width: 140px;
+                   overflow: hidden;
+                   white-space: nowrap;
+                }
+               
+            }
+
+        }
+        &__text{
+            color: rgb(116, 110, 110);
+            font-size: 14px;
+            font-weight: 500;
+            padding-right: 15px;
+        }
+        .deleteBin{
+            display: none;
+        }
+    }
+    &__upper:hover{
+        .deleteBin{
+            display: block;
+            margin: 0;
+            padding: 0;
+            cursor: pointer;
+        }
+    }
+}

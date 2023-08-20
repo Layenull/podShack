@@ -1,0 +1,36 @@
+.sidebar{
+    min-height:100vh;
+    background-color: #222e3c;
+    min-width: 200px;
+    padding: 30px 15px;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    height: 100%;
+    .navbar-brand{
+        font-size: 30px;
+        font-family: 'proj-md';
+        font-weight: 700;
+        span{
+            color: #5cc9a7;
+        }
+    }
+    li{
+        list-style: none;
+    }
+    a{
+        // color: rgba(233,236,239,.5);
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    .sign-out{
+        position: absolute;
+        bottom: 20px;
+        img {
+            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+            // max-width: 300px;
+        }
+    }
+}

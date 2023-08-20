@@ -1,0 +1,220 @@
+@import "../../config/style/variables.scss";
+
+.Description {
+
+    font-family: "pod-rg";
+    // .edit{
+    //     padding: 3px 3px;  
+    //     border: 1px solid $primary_colour; 
+    //     border-radius: 6px;
+    //     background-color: $primary_colour;
+    // }
+    .edit, .edit-sm{
+        display: none;
+        margin-left: 20px;
+        padding: 3px 3px;  
+        border: 1px solid $primary_colour; 
+        border-radius: 6px;
+        background-color: $primary_colour;
+    }
+    .edit-sm{
+        img{
+            width:16px;
+        }
+    }
+    .show{
+        display: block;
+    }
+    input{
+        border: none;
+        outline: none;
+        background: transparent;
+        // width: 80%;
+        
+    }
+    .top {
+        margin-top: 15vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        font-size: 23px;
+        font-weight: 400;
+        text-align: center !important;
+        p{
+            width: fit-content;
+            display: flex;
+            align-items: center
+        }
+        // input{
+        //     width: fit-content;
+        // }
+        @media screen and (min-width:1000px) {
+            font-size: 28px;
+        }
+    }
+
+    padding-bottom: 100px;
+
+    &__header {
+        background-color: white;
+        position: sticky;
+        top: 0;
+        padding-bottom: 12px;
+        filter: drop-shadow(0px 3px 12px rgba(0, 0, 0, 0.071));
+        z-index: 200;
+    }
+
+    &__product {
+        margin: 2vh 5vw;
+        @media screen and (min-width: 1000px) {
+            padding: 20px 20px 20px 0px;
+            border-radius: 25px;
+        }
+        background-color: #FFFFFF;
+
+        &__img {
+            height: 281px;
+            width: 100%;
+            object-fit: contain;
+        }
+
+        &__info {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 22px 0 15px;
+            align-items: center;
+
+            &__price {
+                // font-family: "kap-firma";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 23px;
+                color: #151515;
+                width: 207px;
+
+                span {
+                    // font-family: "kap-smtb";
+                    font-weight: 800;
+                    font-size: 18px;
+                    line-height: 22px;
+                    font-style: italic;
+                }
+            }
+
+            &__cta, .iconBtn {
+                background-color: #FFFFFF;
+                // box-shadow: 0px 4px 4px rgba(6, 51, 91, 0.25);
+                box-shadow: rgba(81, 3, 84, 0.092) 0px 8px 16px 0px;
+                border-radius: 7px;
+                border: 1px solid $primary_colour;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 19px;
+                color: $primary_colour;
+                align-items: center;
+                padding: 6px 12px;
+
+                img {
+                    width: 27px;
+                    margin: auto;
+                    display: block;
+
+                    svg {
+                        fill: #009FB7;
+                    }
+                }
+            }
+            &__cta:hover{
+                background-color: $primary_colour;
+                color: #fff;
+            }
+
+            &__rounded {
+                background: #009FB7;
+                box-shadow: 0px 4px 4px rgba(6, 51, 91, 0.25);
+                border: #009FB7;
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                margin-left: 10px;
+
+                img {
+                    width: 25px;
+                }
+
+            }
+
+            &__features {
+                display: block;
+                margin: 3vh 0;
+
+                .container {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 20px;
+                    // text-align: center;
+                    // font-size: 1px;
+                    font-weight: 400;
+                    border-bottom: 1px solid lightgrey;
+                    padding: 15px 10px;
+                    p{
+                        margin-bottom: 0;
+                    }
+                    .call{
+                      font-size: 16px;
+                      font-weight:700;
+                    }
+                    .response{
+                       text-align: end;
+                       font-size: 14px;
+                       position:relative;
+                    }
+                }
+            }
+        }
+
+        @media screen and (min-width: 1000px) {
+            box-shadow: rgba(0, 0, 0, 0.092) 0px 8px 16px 0px;
+            display: flex;
+            justify-content: space-between;
+            padding:  30px;
+
+            &__left{
+                flex: 30%;
+                margin-right: 20px 20px 20px 0;
+            }
+            &__right{
+                flex: 30%;
+                margin-left: 20px;
+            }
+           &__info{
+            &__features {
+                div{
+                 .call{
+                     font-size: 20px !important;
+                 }
+                 .response{
+                     font-size: 20px !important;
+                     
+                     font-weight: 500;
+                 }
+                }
+             }
+           }
+    }
+
+    }
+   
+    small{
+        padding-right: 5px;
+    }
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block !important;
+}

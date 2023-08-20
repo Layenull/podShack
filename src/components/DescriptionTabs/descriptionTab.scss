@@ -1,0 +1,27 @@
+@import '../../config/style/variables.scss';
+.tabHeader{
+    display: flex;
+    width: 100%;
+    border-bottom: 0.5px solid $primary_colour;
+    margin-bottom: 20px;
+    div{
+        flex: 50%;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 18px;
+        color: $primary_colour;
+        
+    }
+    .tabActive{
+        background-color: $primary_colour;
+        color: #fff;
+    }
+   
+}
+.tabContent{
+    display: block;
+    font-size: 18px;
+}
+.tabHide{
+    display: none;
+}

@@ -1,0 +1,40 @@
+.Store{
+    background:#fff;
+    min-width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    // gap: 10px;
+    padding: 15px;
+    border: 1px solid hsl(0, 0%, 93%);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    scroll-snap-align: start;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
+    // background-size:contain ;
+    
+    // margin-top: 15px;
+    &__img{
+        background: hsl(0, 0%, 93%);
+    border: 1px solid hsl(0, 0%, 80%);
+    // padding: 10px;
+    height:35px;
+    width: 35px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    }
+    &__text{  
+     margin-left: 10px;
+    }
+}
+
+
+
+//@media only screen and (max-width: 1023px) and (max-device-width: 736px)

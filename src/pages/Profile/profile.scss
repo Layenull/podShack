@@ -1,0 +1,131 @@
+@import url('../../config/style/variables.scss');
+
+.Profile {
+    font-family: 'pod-rg';
+
+    .hide {
+        display: none;
+
+    }
+
+    &_body {
+        margin: 100px 5vw 15vh 5vw;
+        font-style: normal;
+        background: #fff;
+        padding: 45px 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+        // color: #070F1C;
+
+
+        &_top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding-bottom: 10px;
+
+            h3 {
+                // margin-top: 15vh;
+                // margin-left: 5vw;
+                margin-right: 5vw;
+                font-size: 24px;
+                font-weight: 400;
+                font-family: "pitch-rg";
+            }
+
+            p {
+                justify-content: end;
+                // margin-top: 20px;
+                //color: $primary_color;
+                font-weight: 600;
+                margin: 0;
+            }
+        }
+
+        .section {
+            display: flex;
+            // gap: 15px;
+            align-items: center;
+            background-color: #fff;
+            cursor: pointer;
+
+            p {
+                margin-bottom: 0 !important;
+                padding-left: 15px;
+            }
+
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        &_top {
+            .userIcon {
+                width: 50px;
+                height: 50px;
+            }
+
+            .t1 {
+                font-weight: 600;
+                font-size: 19px;
+                line-height: 24px;
+            }
+
+            .text {
+                margin-top: auto;
+                margin-bottom: auto;
+                // margin-left: 20px;
+            }
+        }
+
+        .items {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 3vw;
+            padding-right: 3vw;
+            border: 0.2px solid lightgrey;
+            border-radius: 10px;
+            margin-top: 15px;
+
+            // background-color: #F7F7F7;
+            p {
+                //font-family:'pitch-md';
+                font-family: 'pod-md';
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 23px;
+                color: rgb(82, 71, 71);
+            }
+
+        }
+
+        @media screen and (min-width:1000px) {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 140px;
+            max-width: 800px;
+
+            .section{
+                p{
+                    padding-left: 20px;
+                    font-size: 20px;
+                }
+                img{
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+            .items {
+                padding: 15px 20px;
+                
+            }
+        }
+        
+     
+
+
+    }
+
+}

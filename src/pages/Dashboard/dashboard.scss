@@ -1,0 +1,140 @@
+.Dashboard {
+    &__main {
+        margin: 100px 5vw;
+
+        .dropdown-divider {
+            height: 1px;
+            margin: 0.5rem 0;
+            overflow: hidden;
+            border-top: 1px solid #ebedf2;
+        }
+
+        .storeName,
+        h5 {
+            // font-size: 22px;
+            // margin-bottom: 0;
+            color: rgb(102, 102, 102);
+        }
+
+        .dropdown-item,
+        .notifications {
+            margin-bottom: 0;   
+            cursor: pointer;
+        }
+        .dropdown-item {
+            font-size: 18px;
+            padding: 11px 13px;
+        }
+        .notifications{
+            font-size: 16px;
+            padding: 7px 13px;
+        }
+
+        .card {
+            .card-body {
+                padding: 2.5rem;
+            }
+
+            border: 0;
+
+            .card-title {
+                color: #343a40;
+                margin-bottom: 0.75rem;
+                text-transform: capitalize;
+                font-weight: 500;
+                font-size: 1.125rem;
+            }
+
+            .table thead th {
+                border-top: 0;
+                border-bottom-width: 1px;
+                font-weight: 500;
+            }
+
+            .table thead th {
+                vertical-align: bottom;
+                border-bottom: 2px solid #ebedf2;
+            }
+
+            .table td,
+            .table th {
+                vertical-align: middle;
+                font-size: .875rem;
+                line-height: 1;
+                white-space: nowrap;
+            }
+
+            .table td,
+            .table th {
+                vertical-align: middle;
+                font-size: .875rem;
+                line-height: 1;
+                white-space: nowrap;
+            }
+
+            .table td,
+            .table th {
+                padding: 0.9375rem;
+                vertical-align: top;
+                border-top: 1px solid #ebedf2;
+            }
+            .table{
+                .date{
+                    width: 100px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+            }
+
+            .body-scroll {
+                display: block;
+                position: relative;
+                height: 200px;
+                overflow-y: auto;
+
+            }
+        }
+
+        .bg-gradient-danger {
+            background: linear-gradient(90deg, #ffbf96, #fe7096);
+        }
+
+        .bg-gradient-info {
+            background: -webkit-gradient(linear, left top, right top, from(#90caf9), color-stop(99%, #047edf));
+            background: linear-gradient(90deg, #90caf9, #047edf 99%);
+        }
+
+        .bg-gradient-success {
+            background: -webkit-gradient(linear, left top, right top, from(#84d9d2), to(#07cdae));
+            background: linear-gradient(90deg, #84d9d2, #07cdae);
+        }
+
+        .card-img-holder {
+            position: relative;
+            color: #fff;
+            height: 100%;
+        }
+
+        .card-img-absolute {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+        }
+
+        .grid-margin {
+            margin-bottom: 2.5rem;
+        }
+
+        @media screen and (min-width:1000px) {
+
+            margin: 140px 5vw;
+            // max-width: 800px;
+
+        }
+    }
+
+    .dashboard-section {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    }
+}

@@ -1,0 +1,142 @@
+@import '../../config/style/variables.scss';
+
+.Header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    z-index: 105;
+    border-bottom:1px solid var(--cultured);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.10);
+    .notification{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        font-size: 14px;
+        position: absolute;
+        background-color: #33d476;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+        font-family: 'pod-md';
+        top: -12px;
+        right: -7px;
+        // display: block!important;
+    }
+    //font-family:;
+    &__inner {
+        padding: 20px 5vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .Search{
+            display: none;
+        }
+        .logo {
+            width: fit-content;
+            img {
+                width: 140px;
+                // height: 25px;
+                // margin-bottom: 20px;
+            }
+            p{
+                margin: auto;
+                display: block;
+                @media screen and (min-width:100px) {
+                    margin-left: 100px;
+                }
+            }
+        }
+
+        .Icons, .desktop {
+            display: flex;
+            justify-content: space-between;
+            // gap: 12px;
+            align-items: center;
+            a{
+                text-decoration: none;
+                color: #292D32;  
+                position: relative;     
+            }
+
+            li {
+                text-decoration: none;
+            }
+
+            img {
+                width: 28px;
+                vertical-align: inherit;   
+            }
+           
+        }
+    }
+
+    .order {
+        justify-content: start;
+        gap: 25px;
+        font-size: 20px;
+    }
+    @media screen and(max-width: 999px) {
+        .desktop{
+            display: none;
+        }
+    }
+    @media screen and(min-width: 1000px) {
+        &__inner{
+            padding:10px 3vw;
+            &__search{
+                width: 40%;
+                .Search{
+                    width: 100%;
+                }
+            }
+        }
+        .Search{
+            display:flex;
+        }
+        .desktop{
+            display: flex;
+            width: 380px;
+            font-size: 22px;
+            p{
+                font-weight: 500;
+                font-family: 'pod-md';
+                // height: 32px;
+                padding-top: 10px;
+            }
+            // img{
+            //     width: 25px;
+            // }
+        }
+        .pageActive{
+            p{
+                // border-bottom: 3px solid var(--bs-purple);
+                border-bottom: 3px solid #33d476;
+                // color: #1dbf73;
+                // font-size: 25px;
+                
+            }
+            img{
+                width: 32px;
+                height: 32px;
+            }
+            // p,img{
+            //     padding-bottom: 7px;
+            // }
+        }
+        .Icons{
+            display: none;
+        }
+    }
+    @media screen and(max-width: 340px) {
+        .desktop, .Icons{
+            display: none;
+        }
+    }
+    @media screen and(min-width: 600px) and (max-width:1000px){
+        .desktop, .Icons{
+            display: none;
+        }
+    }
+}

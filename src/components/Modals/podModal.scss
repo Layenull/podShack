@@ -1,0 +1,37 @@
+@import '../../config/style/variables.scss';
+    .modal{
+        .modal-header, .modal-footer {
+            border-bottom: none;
+            border-top: none;
+        }
+        span{
+            text-transform: capitalize;
+        }
+    }
+        .modal-btn, .modal-btn-outline:hover, .modal-delete{
+            background-color: $primary_colour;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 7px;
+            
+        }
+        .modal-btn:hover{
+            background-color: var(--bs-indigo);
+        }
+        .modal-btn-outline{
+            background-color: #fff;
+            color: $primary_colour;
+            padding: 6px 12px;
+            border-radius: 7px;
+            border: 1px solid $primary_colour;
+        }
+        .modal-delete{
+            background-color: rgb(211, 8, 8);
+        }
+        .modal-delete:hover{
+            background-color: red;
+        }
+        // .modal-btn-outline:hover{
+
+        // }
+ 

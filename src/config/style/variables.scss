@@ -1,0 +1,21 @@
+$primary_colour: var(--bs-purple);
+$primary_light : rgb(195, 172, 237);
+// $secondary_colour:#c9edf2;
+$secondary_colour: #33d476;
+$header_color: hsl(0, 2%, 30%);
+@font-face {
+    font-family: "pod-rg";
+    src: url("../../props/fonts/SF-Pro/FontsFree-Net-SFProDisplay-Regular.ttf");
+};
+@font-face {
+    font-family: "pod-lt";
+    src: url("../../props/fonts/SF-Pro/FontsFree-Net-SFProDisplay-Thin.ttf");
+};
+@font-face {
+    font-family: "pod-md";
+    src: url("../../props/fonts/SF-Pro/FontsFree-Net-SFProDisplay-Medium.ttf");
+};
+@font-face {
+    font-family: "pod-ita";
+    src: url("../../props/fonts/SF-Pro/FontsFree-Net-SFProDisplay-LightItalic.ttf");
+};

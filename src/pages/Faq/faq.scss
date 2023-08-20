@@ -1,0 +1,47 @@
+@import '../../config/style/variables.scss';
+
+.FAQ{
+    &__inner{
+        margin: 100px 5vw ;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0,  0.1);
+        padding: 30px ;
+
+        &__heading{
+            padding-bottom: 28px;
+            color: #4f4c4c;
+            font-size: 28px;
+        }
+        .accordion{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0,  0.05);
+        }
+        .accordion-button{
+            outline: none !important;
+            color: #4f4c4c;
+            font-weight: 500;
+           
+        }
+        .accordion-button:not(.collapsed){
+            color: $primary_colour !important;
+            background-color: $primary_light;
+        }
+        .accordion-button:not(.collapsed)::after{
+            background-image: var(--bs-accordion-btn-icon);
+        }
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+        .accordion-header{
+            h2{
+                font-weight: 600;
+            }
+        }
+        @media screen and (min-width:1000px) {
+       
+                margin: 140px auto;
+                max-width: 800px;
+        
+        }
+    }
+}
